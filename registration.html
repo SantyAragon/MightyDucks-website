@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mighty Ducks Hockey League | Registration Form</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Merienda&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./styles/design1.css" /> -->
+    <link rel="stylesheet" href="./styles/design3.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Mighty Ducks Hockey League</h1>
+    </header>
+    <nav>
+      <span class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About MDHL</a>
+        <a href="contact.html">Contact</a>
+        <a href="rules.html">Rules</a>
+        <a href="games.html">Game Information</a>
+        <a href="#">Registration</a></span
+      >
+      <span>
+        <img
+          class="logo-2"
+          src="./assets/LogoMightyDucks-01.png"
+          alt="Logo Mighty ducks"
+        />
+      </span>
+    </nav>
+    <section class="main main-registration">
+      <h2>Registration</h2>
+      <form action="show_data.HTML" method="get" class="form-registration">
+        <fieldset class="personal-info">
+          <legend>Personal info</legend>
+          <label
+            >Player's First Name:
+            <input type="text" name="name" />
+          </label>
+          <label>Last Name: <input type="text" name="last-name" /> </label>
+          <label class="adress"
+            >Street Address: <input type="text" name="adress" class="adress" />
+          </label>
+          <label class="city"
+            >City: <input type="text" name="city" class="city"
+          /></label>
+          <label class="zip-code"
+            >Zip Code
+            <input type="number" name="zip-code" id="zip-code" class="zip-code"
+          /></label>
+          <label
+            >Birth Date(mm/dd/yyyy)
+            <input type="date" name="birth-date" id="birth-date"
+          /></label>
+          <label>Gender:</label>
+          <label>
+            Female <input type="radio" id="female" name="gender" value="Female"
+          /></label>
+          <label
+            >Male <input type="radio" id="male" name="gender" value="Male"
+          /></label>
+        </fieldset>
+        <fieldset class="school-near">
+          <legend>Wich elementary school do you live near?</legend>
+          <label>
+            Closest School:
+            <select name="school-near">
+              <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+              <option value="Greenbay">Greenbay</option>
+              <option value="Howard A Yeager">Howard A Yeager</option>
+              <option value="Marjorie P Hart">Marjorie P Hart</option>
+              <option value="Nort Elementary">Nort Elementary</option>
+              <option value="South Elementary">South Elementary</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset class="position-play">
+          <legend>
+            What position(s) do you normally play? (Check all that apply)
+          </legend>
+          <label
+            >Forward
+            <input type="checkbox" name="position-play" value="Forward" />
+          </label>
+          <label>
+            Defense
+            <input type="checkbox" name="position-play" value="Defense" />
+          </label>
+          <label>
+            Midfield
+            <input type="checkbox" name="position-play" value="Midfield" />
+          </label>
+          <label
+            >Goalkeeper
+            <input type="checkbox" name="position-play" value="Goalkeeper"
+          /></label>
+        </fieldset>
+        <fieldset class="uniform-size">
+          <label
+            >Uniform size:
+
+            <select name="uniform-size">
+              <option value="youth-small">Youth Small</option>
+              <option value="youth-medium">Youth Medium</option>
+              <option value="youth-large">Youth Large</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+              <option value="extra-large">Extra-Large</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset class="permission">
+          <legend>Permission to Play</legend>
+          <p>
+            I, the parent or guardian of the minor registrant, agree that the
+            registrant and I will abide by all the rules of the Mighty Ducks
+            Hocket League (MDHL). In recognizing the possibility of physical
+            injury associated with hocket and in consideration for the "League"
+            accepting the registratnt for its hocket programs and activities, I
+            hereby release, discharge, and/or otherwise indemnify MDHL, their
+            employees and associated personnel and volunteers, including the
+            facilties used for practices and games, against any claim by orn on
+            behalf of the registrant as a result of the registrant's
+            participation in the program/orbeing transported to or from MDHL
+            sponsored activities, which transportation By signing below, I here
+            by agree and authorize the above. In addition, by signing below, I
+            also acknowledge that i have read the canacellation policy and agree
+            to its terms.
+          </p>
+          <label
+            >Parent/Guardian Signature: <input type="text" name="signature"
+          /></label>
+          <label>Date: <input type="text" name="date" /></label>
+        </fieldset>
+        <input type="submit" value="enviar" />
+      </form>
+    </section>
+    <footer>
+      <h3>Santiago Aragon | Mindhub</h3>
+    </footer>
+  </body>
+</html>

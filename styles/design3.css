@@ -1,0 +1,233 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url(../assets/design1_image1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+body:before {
+  content: "";
+  min-height: 100vh;
+  position: fixed;
+  background: linear-gradient(0deg, rgb(142 137 142) 0%, rgb(33 25 21) 100%);
+  /* background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+  opacity: 0.5;
+  min-width: 100%;
+  z-index: -1;
+}
+
+/* barra de navegacion */
+nav {
+  background-color: #252228;
+  order: -1;
+  height: 12vh;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  font-family: "Bebas Neue", cursive;
+}
+.logo-1 {
+  width: 0%;
+}
+.logo-2 {
+  width: 6rem;
+  margin-right: 5rem;
+}
+.navbar {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin-left: 3rem;
+}
+.navbar a[href="#"]{
+  background-color: #000000;
+  border-radius: .5rem;
+  font-weight: 600;
+ }
+nav a {
+  text-decoration: none;
+  color: #f7f7f8;
+  padding: 1rem;
+  
+}
+/*Contenido principal */
+header {
+  display: flex;
+  align-items: center;
+  margin: 0px 7rem;
+  color: white;
+  font-size: 2.5rem;
+  font-family: "Bebas Neue", cursive;
+  height: 15vh;
+  width: 90%;
+}
+.main {
+  display: flex;
+  width: 90%;
+  order: 2;
+  margin: 0px 7rem 25px;
+  flex-direction: column;
+  font-family: "Kanit", sans-serif;
+  color: white;
+  font-size: 1.5rem;
+}
+.main h3,
+.main-about h2,
+.main-contact p {
+  color: #252228;
+}
+
+.events {
+  order: 1;
+  height: 10vh;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-size: 2rem;
+  margin-top: 0;
+  margin-left: 3px;
+  display: flex;
+  align-items: center;
+  margin-left: 7rem;
+  width: 90%;
+}
+#rules {
+  color: #252228;
+}
+.text-rules p {
+  text-indent: 2rem;
+}
+/*TABLA DE JUEGOS */
+.table-map{
+  display:flex;
+  align-items: center;
+  
+}
+.table-map iframe{
+margin-left: 3rem;
+height: 75vh;
+margin-top:2.7rem;
+}
+
+table,
+tr,
+th,
+td {
+  background-color: #25222880;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  text-align: center;
+  border-collapse: collapse;
+}
+table {
+  width: 90vh;
+  font-size: 26px;
+  align-self: center;
+}
+.team-location {
+  width: 12rem;
+}
+.september {
+  width: 20rem;
+}
+.times {
+  width: 8rem;
+}
+table:hover {
+  background-color: #0e0616b0;
+}
+table:hover thead {
+  background-color: #000000;
+}
+
+table .tbody-1:hover,
+.tbody-2:hover,
+.tbody-3:hover,
+.tbody-4:hover,
+.tbody-5:hover {
+  background-color: #ffffff49;
+}
+table caption {
+  text-align: left;
+  font-style: italic;
+  color: aliceblue;
+  text-decoration: underline;
+  font-size: 30px;
+}
+th,
+td {
+  text-align: left;
+}
+.fecha {
+  text-align: center;
+}
+.game-contact {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+}
+.game-bold {
+  font-weight: 800;
+  color: #252228;
+  font-size: 25px;
+}
+.footer-table {
+  font-size: 25px;
+}
+/* FORMULARIO */
+.form-registration {
+  background-color: rgba(37, 34, 40, 0.246);
+  color: #f7f7f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form input {
+  background-color: #25222880;
+  color: white;
+  font-size: 20px;
+}
+form .personal-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
+fieldset {
+  border: 2px solid black;
+  margin: 0.5rem;
+}
+
+.adress {
+  width: 80%;
+}
+.city {
+  width: 60%;
+}
+.zip-code {
+  width: 40%;
+}
+
+/* PIE DE PAGINA  */
+footer {
+  background-color: #252228;
+  color: #f7f7f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  order: 3;
+  width: 100%;
+  height: 2rem;
+}
